@@ -78,7 +78,7 @@ export default function App() {
         </header>
 
         <main className="flex flex-1 flex-col rounded-3xl border border-white/10 bg-white/5 p-4 shadow-2xl">
-          <div className="flex-1 space-y-3 overflow-y-auto p-2">
+          <div className="flex-1 space-y-3 overflow-y-scroll p-2 border border-gray-500 rounded-2xl max-h-[67dvh]">
             {messages.length === 0 ? (
               <div className="rounded-2xl border border-dashed border-white/15 p-6 text-slate-400">
                 Start the conversation by sending a message.
@@ -87,14 +87,14 @@ export default function App() {
               messages.map((msg, idx) => (
                 <div
                   key={idx}
-                  className={`max-w-[85%] rounded-2xl px-4 py-3 ${
+                  className={`max-w-[85%] rounded-xl px-4 py-3 ${
                     msg.role === 'user'
                       ? 'ml-auto bg-blue-600 text-white'
                       : 'bg-slate-800 text-slate-100'
                   }`}
                 >
-                  <div className="mb-1 text-xs uppercase opacity-70">{msg.role}</div>
-                  <div className="whitespace-pre-wrap">{msg.content}</div>
+                  <div className="mb-1 text-xs uppercase opacity-70 font-semibold">{msg.role}</div><hr className="mb-2 border-gray-400" />
+                  <div className="whitespace-pre-wrap text-gray-100">{msg.content}</div>
                 </div>
               ))
             )}
