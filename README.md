@@ -52,7 +52,7 @@ chatbot-project/
 
 ---
 
-# 1. Install Ollama
+# 1. Install Ollama 🦙
 
 ## Mac
 
@@ -82,7 +82,7 @@ chatbot-project/
 
 ---
 
-# 2. Install AI Model
+# 2. Install AI Model 🤖
 
 Open Terminal / CMD:
 
@@ -104,7 +104,7 @@ ollama pull phi3:mini
 
 ---
 
-# 3. Start Ollama
+# 3. Start Ollama 🦙
 
 ```bash
 ollama serve
@@ -118,16 +118,16 @@ http://localhost:11434
 
 ---
 
-# 4. Clone GitHub Project
+# 4. Clone GitHub Project 👾
 
 ```bash
-git clone YOUR_GITHUB_REPO_URL
+git clone git@github.com:ShikharSth/chatbot-project.git
 cd chatbot-project
 ```
 
 ---
 
-# 5. Backend Setup
+# 5. Backend Setup 🗄️
 
 Go backend folder:
 
@@ -186,7 +186,7 @@ http://127.0.0.1:8000
 
 ---
 
-# 6. Frontend Setup
+# 6. Frontend Setup 🖥️
 
 Open new terminal:
 
@@ -214,7 +214,7 @@ http://localhost:5173
 
 ---
 
-# 7. Change AI Model
+# 7. Change AI Model 🤖
 
 Open:
 
@@ -237,7 +237,7 @@ OLLAMA_MODEL = "phi3:mini"
 
 ---
 
-# 8. Knowledge Files
+# 8. Knowledge Files 🗂️
 
 Put files inside:
 
@@ -252,10 +252,12 @@ Example:
 ```json
 [
   {
-    "order_id": "1024",
-    "name": "Shikhar",
-    "status": "Shipped"
-  }
+      "order_id": "1024",
+      "product name": "Laptop",
+      "name": "Shikhar",
+      "status": "Shipped",
+      "address": "Kathmandu"
+    }
 ]
 ```
 
@@ -266,14 +268,22 @@ Return policy:
 Products can be returned within 7 days.
 ```
 
+## detail.py
+
+```py
+tax_rate = 0.13
+discount = 0.10
+```
+
 Now chatbot can answer:
 
 * Where is order 1024?
 * What is return policy?
+* What is dicount rate?
 
 ---
 
-# 9. Common Commands
+# 9. Common Commands </>
 
 ## Run Backend
 
@@ -295,7 +305,7 @@ ollama serve
 
 ---
 
-# 10. Troubleshooting
+# 10. Troubleshooting 🛠️🛠️
 
 ## Ollama not found
 
@@ -334,7 +344,7 @@ OLLAMA_MODEL = "phi3:mini"
 
 ---
 
-# 11. Recommended Models
+# 11. Recommended Models 🤖
 
 ## Best Quality
 
@@ -356,7 +366,7 @@ phi3:mini
 
 ---
 
-# 12. Future Upgrade Ideas
+# 12. Future Upgrade Ideas 💭
 
 ✅ Streaming response
 ✅ Chat history sidebar
@@ -368,8 +378,8 @@ phi3:mini
 
 ---
 
-# Author
+# Author 👨🏻‍💻
 
-Built with Django + React + Ollama
+Built with Django + React + Ollama by [Shikhar](https://github.com/ShikharSth)
 
 ---
