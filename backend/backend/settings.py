@@ -70,7 +70,7 @@ CORS_ALLOWED_ORIGINS = [
 
 # Your Ollama model choice
 OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
-OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "llama3:8b")
+OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "qwen2.5:7b")
 
 STATIC_URL = 'static/'
 
