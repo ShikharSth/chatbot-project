@@ -17,16 +17,16 @@ This project runs **fully on your computer** using local AI models like:
 
 # Features
 
-✅ ChatGPT-style chatbot UI
-✅ Django REST API with ModelViewSet
-✅ React + Tailwind frontend
-✅ Uses local Ollama models
-✅ Reads company/order data from files
-✅ Order lookup from JSON
-✅ Policy lookup from TXT
-✅ Fast optimized responses
-✅ No OpenAI API cost
-✅ Runs offline after setup
+✅ ChatGPT-style chatbot UI  
+✅ Django REST API with ModelViewSet  
+✅ React + Tailwind frontend  
+✅ Uses local Ollama models  
+✅ Reads company/order data from files  
+✅ Order lookup from JSON  
+✅ Policy lookup from TXT  
+✅ Fast optimized responses  
+✅ No OpenAI API cost  
+✅ Runs offline after setup  
 
 ---
 
